@@ -1,0 +1,99 @@
+$font-stack: 'Open Sans';
+$font-w: 400; 
+$black: black;
+
+@mixin header-features () {
+    display: flex;
+    flex: content;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 20px;
+    margin:0;
+    color:$black;
+border-radius: 1.25rem;
+}
+
+@mixin header-size-weight () {
+    font-size: 60px;
+    font-weight: 300;
+@content;
+}
+
+@mixin button-transition {
+    @content;
+
+    transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out; 
+
+    &:hover {
+      transform: translateY(20px); 
+      opacity: 0.5;                
+    }
+}
+
+// Spin animation 
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+body {
+    font-family: $font-stack;
+    font-weight: $font-w;
+}
+
+/* nesting */
+.header {
+
+    background-color: #FFF0ED ;
+    padding:2.25rem;
+    display: flex;
+    justify-content:space-evenly;
+    text-decoration: none;
+    position: sticky;
+    z-index: 4;
+    /* margin: 1.25rem; */
+    .logo{
+        width: auto;
+        height: 2rem;
+        text-decoration: none;
+
+    }
+}
+//    mixin
+    .header__logo,.header__navlinks
+    {
+        @include header-features;
+    }
+
+    
+    .header__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: $black;
+    display: inline;
+    border-radius: 20px;
+    }
+    
+    .header__navlinks a {
+    display: inline;
+    padding: 1.25rem;
+    text-decoration: none;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    color: $black;
+    }
+    .header__navlinks a:hover {
+        color: #5BACC3;
+    }
+    
+    
