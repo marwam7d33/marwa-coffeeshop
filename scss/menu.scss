@@ -41,13 +41,15 @@ h1 {
 }
 
 .outer-border_menu {
-
+@include button-transition 
+{
     border: #5BACC3 solid .3125rem;
     width:20.75rem;
     height:13.5rem;
     position:relative;
     top: 12.5rem;
     left: 36.5rem;
+}
 }
 
 .hero  { 
