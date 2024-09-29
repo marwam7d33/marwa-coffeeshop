@@ -1,6 +1,6 @@
 @use './_global.scss/global' as *;
-/* BEM */
- .Product__section {
+
+.Product__section {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -8,7 +8,6 @@
  }
 .product__item {
 width: 20.625rem;
-// height: 27.5rem;
 margin: 1.25rem;
 border-radius: .625rem;
 box-shadow:0rem .3125rem .5625rem -0.0625rem rgba(0, 0, 0, 0.25) ;
@@ -68,7 +67,6 @@ margin:0;
 .outer-product_button  {
     @include button-transition 
 { 
-    // transform: translateY(20px); 
     border: .125rem solid black;
     position: relative;
     width: 11.25rem;
@@ -92,18 +90,12 @@ align-items: center;
 
 
 h2 {
-    // font-size: 60px;
-    // font-weight: 300;
     @include header-size-weight {
         text-align: center;
         margin: 0;    
     }
-    // text-align: center;
-    // margin: 0;
 }
 h1{ 
-    // font-size: 60px;
-    // font-weight: 300;
     @include header-size-weight {
 
     margin: 1.25rem;
@@ -147,9 +139,6 @@ nav {
     background-size: cover;
     width: 25rem;
     height: 24.375rem;
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: row-reverse;
     position: relative;
 
 }
@@ -199,16 +188,6 @@ gap: 305%;
 }
 }
 
-// img2 {
-//     width: 100px; // Adjust the size
-//     height: auto;
-//     transition: transform 0.5s ease-in-out;
-  
-//     &:hover {
-//       animation: spin 1s linear infinite; // Spins when hovered
-//     }
-// }
-  
 .before-footer_title {
     text-align: left;
 }

@@ -19,15 +19,15 @@ $black: black;
     align-content: center;
     justify-content: flex-end;
     text-decoration: none;
-    font-size: 21px;
-    padding: 20px;
+    font-size: 1.3125rem;
+    padding: 1.25rem;
     margin:0;
     color:$black;
     border-radius: 1.25rem;
 }
 
 @mixin header-size-weight () {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
 @content;
 }
@@ -38,7 +38,7 @@ $black: black;
     transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out; 
 
     &:hover {
-      transform: translateY(20px); 
+      transform: translateY(1.25rem); 
       opacity: 0.5;                
     }
 }
@@ -70,7 +70,6 @@ body {
     text-decoration: none;
     position: sticky;
     z-index: 4;
-    /* margin: 1.25rem; */
     .logo{
         width: auto;
         height: 2rem;
@@ -92,7 +91,7 @@ body {
     text-decoration: none;
     color: $black;
     display: inline;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     }
     
     .header__navlinks a {

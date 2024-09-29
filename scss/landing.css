@@ -29,7 +29,6 @@ body {
   text-decoration: none;
   position: sticky;
   z-index: 4;
-  /* margin: 1.25rem; */
 }
 .header .logo {
   width: auto;
@@ -44,8 +43,8 @@ body {
   align-content: center;
   justify-content: flex-end;
   text-decoration: none;
-  font-size: 21px;
-  padding: 20px;
+  font-size: 1.3125rem;
+  padding: 1.25rem;
   margin: 0;
   color: black;
   border-radius: 1.25rem;
@@ -57,7 +56,7 @@ body {
   text-decoration: none;
   color: black;
   display: inline;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .header__navlinks a {
@@ -73,7 +72,6 @@ body {
   color: #5BACC3;
 }
 
-/* BEM */
 .Product__section {
   text-align: center;
   display: flex;
@@ -148,7 +146,7 @@ body {
   transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out;
 }
 .outer-product_button:hover {
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   opacity: 0.5;
 }
 
@@ -163,14 +161,14 @@ body {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   margin: 1.25rem;
 }
@@ -266,7 +264,7 @@ nav {
   transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out;
 }
 .before-footer__image-container--outer:hover {
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   opacity: 0.5;
 }
 
@@ -337,7 +335,7 @@ button {
   transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out;
 }
 .outer-nitroblue_button:hover {
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   opacity: 0.5;
 }
 
