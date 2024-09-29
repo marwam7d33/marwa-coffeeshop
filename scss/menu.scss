@@ -1,14 +1,4 @@
 @use './_global.scss/global' as *;
-
-
-html 
-{ 
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Open Sans';
-    font-weight: 400;
-} 
 .nitroheader{
     background-color: white; color:black; font-weight: 300; font-size: 3rem;
 }
@@ -55,7 +45,7 @@ h1 {
 .hero  { 
     width: 100%;
     height: 43.75rem;
-    background-image: url(/Assets/coffee-circle.jpg);
+    background-image: url(/Assets/images/coffee-circle.jpg);
     background-position: center;
     background-size: cover;
     /* display: flex;
@@ -64,9 +54,6 @@ h1 {
     align-content: center; */
     
 }
-
-
-
 .headers { 
     /* styling did not apply */
 font: size 6.25rem;
@@ -104,7 +91,7 @@ div1 {
     text-align: center;
     margin: 20px;
 }
-.subnavigations a 
+.subnavigations a
 {
 padding:6px; border-left: 4px solid #5BACC3;
 }

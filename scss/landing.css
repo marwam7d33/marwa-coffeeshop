@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+* body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -64,22 +73,18 @@ body {
   color: #5BACC3;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 /* BEM */
-.Product_section {
+.Product__section {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
-.a__product {
+.product__item {
   width: 20.625rem;
   margin: 1.25rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   box-shadow: 0rem 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
 }
 
@@ -93,7 +98,7 @@ html {
   align-content: center;
 }
 
-.outer-product_name {
+.product__name-container {
   width: 100vw;
   text-align: left;
   position: relative;
@@ -133,7 +138,7 @@ html {
 }
 
 .outer-product_button {
-  border: 2px solid black;
+  border: 0.125rem solid black;
   position: relative;
   width: 11.25rem;
   height: 4rem;
@@ -153,7 +158,7 @@ html {
   color: white;
   background-color: #5BACC3;
   vertical-align: text-bottom;
-  margin: 0px 640px;
+  margin: 0rem 40rem;
   align-items: center;
 }
 
@@ -171,22 +176,24 @@ h1 {
 }
 
 h3 {
-  font-size: 31px;
+  font-size: 1.9375rem;
   font-weight: 300;
   margin: 1.25rem;
 }
 
 nav {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 400;
   text-decoration: none;
 }
 
-p1 {
+.product__details {
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: left;
   color: #909090;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .before-footer {
@@ -205,7 +212,7 @@ p1 {
 }
 
 .before-footer_image {
-  background-image: url(/Assets/coldbrewbackground.png);
+  background-image: url(/Assets/images/coldbrewbackground.png);
   background-position: center;
   background-size: cover;
   width: 25rem;
@@ -213,16 +220,16 @@ p1 {
   position: relative;
 }
 
-.img1 {
+.before-footer__image--tilted {
   z-index: 5;
-  left: 144px;
-  top: 106px;
+  left: 9rem;
+  top: 6.625rem;
   position: relative;
-  width: 120px;
+  width: 7.5rem;
   height: auto;
   transition: transform 0.5s ease-in-out;
 }
-.img1:hover {
+.before-footer__image--tilted:hover {
   animation: spin 1s linear infinite;
 }
 
@@ -232,7 +239,7 @@ p1 {
 }
 
 .before-footer_icons {
-  width: 50px;
+  width: 3.125rem;
   gap: 305%;
 }
 
@@ -241,15 +248,15 @@ p1 {
   padding-right: 8.25rem;
 }
 
-.before-footer-image_container {
+.before-footer__image-container {
   display: flex;
   justify-content: flex-end;
   margin-top: -22rem;
   margin-right: -4rem;
 }
 
-.outer-before-footer-image_container {
-  border: #5BACC3 solid 4px;
+.before-footer__image-container--outer {
+  border: #5BACC3 solid 0.25rem;
   position: relative;
   z-index: 1;
   top: -2rem;
@@ -258,7 +265,7 @@ p1 {
   height: 25rem;
   transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out;
 }
-.outer-before-footer-image_container:hover {
+.before-footer__image-container--outer:hover {
   transform: translateY(20px);
   opacity: 0.5;
 }
@@ -267,14 +274,14 @@ p1 {
   text-align: left;
 }
 
-.before-footer_button {
+.before-footer__button {
   background-color: #5BACC3;
   width: 20%;
   margin-top: 3.9rem;
 }
 
-.outer-before-footer_button {
-  border: 2px solid black;
+.before-footer__button-container--outer {
+  border: 0.125rem solid black;
   width: 20%;
   height: 4rem;
   position: relative;
@@ -283,8 +290,8 @@ p1 {
   z-index: 1;
   transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out;
 }
-.outer-before-footer_button:hover {
-  transform: translateY(20px);
+.before-footer__button-container--outer:hover {
+  transform: translateY(1.25rem);
   opacity: 0.5;
 }
 
@@ -295,7 +302,7 @@ footer {
 }
 
 button {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 400;
   width: 11.25rem;
   padding: 1.25rem;
@@ -306,22 +313,22 @@ button {
 .pink {
   /* display: flex; */
   background-color: #FFF0ED;
-  padding: 80px;
+  padding: 5rem;
   width: auto;
-  height: 560px;
+  height: 35rem;
   z-index: 1;
 }
 
 .inner-nitroblue_button {
   position: relative;
   z-index: 1;
-  font-size: 16px;
+  font-size: 1rem;
   left: 0;
 }
 
 .outer-nitroblue_button {
   position: relative;
-  border: 2px solid #000;
+  border: 0.125rem solid #000;
   width: 10.9531rem;
   height: 4rem;
   z-index: 3;
@@ -335,13 +342,13 @@ button {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   width: 33%;
 }
 
 .discount {
-  font-size: 31px;
+  font-size: 1.9375rem;
   font-weight: 400;
   background-color: #393939;
   color: white;
@@ -351,7 +358,7 @@ p {
 }
 
 .icons {
-  width: 50px;
+  width: 3.125rem;
   text-decoration: none;
   display: inline-block;
 }

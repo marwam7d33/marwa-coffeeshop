@@ -1,20 +1,16 @@
 @use './_global.scss/global' as *;
-
-html {
-    box-sizing: border-box;
-}
 /* BEM */
- .Product_section {
+ .Product__section {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1.25rem;
  }
-.a__product {
+.product__item {
 width: 20.625rem;
 // height: 27.5rem;
 margin: 1.25rem;
-border-radius: 10px;
+border-radius: .625rem;
 box-shadow:0rem .3125rem .5625rem -0.0625rem rgba(0, 0, 0, 0.25) ;
 }
 
@@ -29,7 +25,7 @@ box-shadow:0rem .3125rem .5625rem -0.0625rem rgba(0, 0, 0, 0.25) ;
     align-content: center;
 
 }
-.outer-product_name {
+.product__name-container {
     width: 100vw;
     text-align: left;
     position: relative;
@@ -73,7 +69,7 @@ margin:0;
     @include button-transition 
 { 
     // transform: translateY(20px); 
-    border: 2px solid black;
+    border: .125rem solid black;
     position: relative;
     width: 11.25rem;
     height: 4rem;
@@ -90,7 +86,7 @@ padding: 1.25rem;
 color: white;
 background-color: #5BACC3;
 vertical-align: text-bottom;
-margin:0px 640px;
+margin:0rem 40rem;
 align-items: center;
 }
 
@@ -114,21 +110,22 @@ h1{
 }
 }
 h3 {
-    font-size: 31px;
+    font-size: 1.9375rem;
     font-weight: 300;
     margin: 1.25rem;
 }
 nav { 
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
     text-decoration: none;
 
 }
-p1 { 
+ .product__details { 
+    width: fit-content;
     text-align: left;
     color: #909090;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .before-footer {
     background-color: white;
@@ -145,7 +142,7 @@ p1 {
     
 }
 .before-footer_image {
-    background-image: url(/Assets/coldbrewbackground.png); 
+    background-image: url(/Assets/images/coldbrewbackground.png); 
     background-position: center;
     background-size: cover;
     width: 25rem;
@@ -156,16 +153,16 @@ p1 {
     position: relative;
 
 }
-.img1 {
+.before-footer__image--tilted {
     z-index: 5;
-    left: 144px;
-    top: 106px;
+    left: 9rem;
+    top: 6.625rem;
     position: relative;
-    width: 120px;
+    width: 7.5rem;
     height: auto;
   transition: transform 0.5s ease-in-out;
     &:hover {
-      animation: spin 1s linear infinite; // Spins when hovered
+      animation: spin 1s linear infinite;
     }
   
 }
@@ -174,24 +171,24 @@ p1 {
     display: flex;
 }
 .before-footer_icons {
-width: 50px;
+width: 3.125rem;
 gap: 305%;
 }
 .before-footer_paragraph {
     width: 50%;
     padding-right: 8.25rem;
 }
-.before-footer-image_container {
+.before-footer__image-container {
     display: flex;
     justify-content: flex-end;
     margin-top: -22rem;
     margin-right: -4rem;
 }
 
-.outer-before-footer-image_container {
+.before-footer__image-container--outer {
 @include button-transition 
 { 
-    border: #5BACC3 solid 4px;
+    border: #5BACC3 solid .25rem;
     position: relative;
     z-index: 1;
     top: -2rem;
@@ -215,14 +212,14 @@ gap: 305%;
 .before-footer_title {
     text-align: left;
 }
-.before-footer_button {
+.before-footer__button {
     background-color: #5BACC3;
     width: 20%;
     margin-top: 3.9rem;
 }
 
-.outer-before-footer_button {
-    border: 2px solid black;
+.before-footer__button-container--outer {
+    border: .125rem solid black;
     width: 20%;
     height: 4rem;
     position: relative;
@@ -232,7 +229,7 @@ gap: 305%;
     transition: transform 0.5s ease-in-out, opacity 0.1s ease-in-out; 
 
     &:hover {
-      transform: translateY(20px); 
+      transform: translateY(1.25rem); 
       opacity: 0.5;                
     }
   }
@@ -244,7 +241,7 @@ footer{
 display: inline block;
 }
 button {
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
     width: 11.25rem;
 padding: 1.25rem;
@@ -255,23 +252,23 @@ background-color: #5BACC3;
 .pink {
     /* display: flex; */
     background-color: #FFF0ED;
-    padding: 80px;
+    padding: 5rem;
     width: auto;
-    height: 560px;
+    height: 35rem;
 z-index: 1;
 
 }
 .inner-nitroblue_button {
     position: relative;
     z-index: 1; 
-    font-size: 16px;
+    font-size: 1rem;
     left: 0;
 
 }
 .outer-nitroblue_button {
     @include button-transition {
         position: relative;
-        border: 2px solid #000; 
+        border: .125rem solid #000; 
         width: 10.9531rem;
         height: 4rem;
         z-index: 3;
@@ -280,13 +277,13 @@ z-index: 1;
     }
 }
 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     width: 33%;
 
 }
 .discount {
-font-size: 31px;
+    font-size: 1.9375rem; 
     font-weight: 400;
     background-color: #393939;
     color: white;
@@ -296,7 +293,7 @@ font-size: 31px;
 
 }
 .icons {
-    width: 50px;
+    width: 3.125rem;
     text-decoration: none;
      display: inline-block;
 }
@@ -316,6 +313,6 @@ padding: 3.125rem;
     width: 100%;
     display: inline-block;
     background-color: #FFF0ED;
-margin: 0;   
+    margin: 0;   
  text-align: center;
 }
